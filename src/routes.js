@@ -10,7 +10,7 @@ const path = require('path');
 
 const routes = express.Router();
 
-routes.get('/.well-known', (req, res) => {
+routes.get('/.well-known/brave-rewards-verification.txt', (req, res) => {
   return res.sendFile(path.resolve(__dirname, '../.well-known') + '/brave-rewards-verification.txt');
 });
 
